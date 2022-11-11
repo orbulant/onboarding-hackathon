@@ -2,8 +2,11 @@ import Head from "next/head";
 import { Navbar, Text, Button, Link } from "@nextui-org/react";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
+import LoginButton from "../components/LoginButton"
 
 export default function Home() {
+  //console.log(window.localStorage)
+
   return (
     <div>
       <Head>
@@ -14,6 +17,8 @@ export default function Home() {
       <Layout>
         <div className={styles.grid}>
           <p>Sample Home Page</p>
+          <LoginButton />
+
         </div>
       </Layout>
     </div>
