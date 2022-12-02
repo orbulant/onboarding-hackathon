@@ -7,6 +7,7 @@ import { Navbar, Text, Button } from "@nextui-org/react";
 enum routes {
   home = "/",
   trial = "/trial",
+  referral = "/referral"
 }
 
 const Layout = ({ children }: React.PropsWithChildren) => {
@@ -34,6 +35,13 @@ const Layout = ({ children }: React.PropsWithChildren) => {
             href={routes.trial}
           >
             Free Trial
+          </Navbar.Link>
+          <Navbar.Link
+            color="inherit"
+            isActive={router.pathname === routes.referral}
+            href={routes.referral}
+          >
+            Referral
           </Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>

@@ -18,7 +18,6 @@ export default function Home() {
         <div className={styles.grid}>
           <p>Sample Home Page</p>
           <LoginButton />
-
         </div>
       </Layout>
     </div>
